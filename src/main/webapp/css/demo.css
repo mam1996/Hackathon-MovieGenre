@@ -6,7 +6,15 @@ table, th, td {
 }
 
 .capture-div {
-	     justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-box {
+  background-color: black;
+  width: 50px;
 }
 
 h1 {
