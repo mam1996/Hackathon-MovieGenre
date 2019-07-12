@@ -6,13 +6,13 @@
 </head>
 
   <body>
-    <h1>Movie Poster Recognition Iteration 1.4</h1>
-    <p>capturing image</p>
+    <h1>SmartGen Iteration 1.4</h1>
+    <p>Smart Genre Recognition</p>
     <main id="proj">
-      <input type="file" accept="image/*;capture=camera" name="Accept Image">
-      <input type="file" accept="video/*;capture=camcorder" name="Accept Video">
-      <input type="file" accept="audio/*;capture=microphone" name="Accept Audio">
-      
+      <div class="fileClass">
+	<div class="capture-div">
+      <input class="capture-upload" type="file" accept="image/*;capture=camera" name="Accept Image">
+      </div>
 <!-- temporary deleted 
     <script>
       function update(stream) {
@@ -35,9 +35,11 @@
 	then((stream) => {video.srcObject = stream});
       </script>
     -->
-<video id="player" controls autoplay></video>
-<button class="button" id="capture" >Capture</button>
-<canvas id="canvas" width=320 height=240></canvas>
+<video class="capture-video" id="player" controls autoplay></video>
+<div style="text-align:center;">
+<button class="capture-button" id="capture" >Capture</button>
+</div></div>
+<canvas class="canvasClass" id="canvas" width=320 height=240></canvas>
 <script>
   const player = document.getElementById('player');
   const canvas = document.getElementById('canvas');
